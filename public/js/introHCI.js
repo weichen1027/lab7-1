@@ -1,5 +1,6 @@
 'use strict';
 var startTime;
+var _gaq = _gaq || [];
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
