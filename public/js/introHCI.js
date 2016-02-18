@@ -17,7 +17,7 @@ function initializePage() {
 
 function projectLike(e) { 
 	var endTime = new Date().getTime();
-	sga("send", "event", 'like', 'click');
+	ga("send", "event", 'like', 'click');
 
 	var timeSpent = endTime - startTime;
 	_gaq.push(['_trackTiming', 'Click_Like', 'Time_to_Like', timeSpent]);
