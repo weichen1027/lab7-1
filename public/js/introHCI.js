@@ -10,4 +10,11 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	$(".project .likeCtr").click(projectLike);
+	$(".project .likeCtrGrid").click(projectLike);
+}
+
+function projectLike(e) { 
+	ga("send", "event", 'like', 'click');
+
 }
