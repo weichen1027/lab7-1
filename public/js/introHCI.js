@@ -1,6 +1,6 @@
 'use strict';
 var startTime;
-var _gaq = _gaq || [];
+
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
@@ -12,11 +12,11 @@ $(document).ready(function() {
 function initializePage() {
 	// your code here
 	startTime = new Date().getTime();
-	$(".project .likeCtr").click(projectLike);
-	$(".project .likeCtrGrid").click(projectLike);
+	$(".likeBtn").click(projectLike);
 }
 
 function projectLike(e) { 
+	e.preventDefault();
 	var endTime = new Date().getTime();
 	ga("send", "event", 'like', 'click');
 
