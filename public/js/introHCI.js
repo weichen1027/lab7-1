@@ -21,5 +21,5 @@ function projectLike(e) { 
 	ga("send", "event", 'like', 'click');
 
 	var timeSpent = endTime - startTime;
-	_gaq.push(['_trackTiming', 'Click_Like', 'Time_to_Like', timeSpent]);
+	ga('send', 'timing', 'time_spent', 'clickLike', timeSpent);
 }
